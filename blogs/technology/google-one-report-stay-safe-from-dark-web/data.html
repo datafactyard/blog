@@ -44,12 +44,12 @@
     <div class="toc">
         <h2>Table of Contents</h2>
         <ul>
-            <li><a href="javascript:void(0)" onclick="scrollToSection('s1')">What Is the Dark Web?</a></li>
-            <li><a href="javascript:void(0)" onclick="scrollToSection('s2')">Why Data Leaks Are a Big Problem</a></li>
-            <li><a href="javascript:void(0)" onclick="scrollToSection('s3')">How Do Data Leaks Happen?</a></li>
-            <li><a href="javascript:void(0)" onclick="scrollToSection('s4')">How to Stay Safe on the Dark Web</a></li>
-            <li><a href="#s5" onclick="scrollToSection('s5')">How to Check if Your Personal Information is on the Dark Web with Google One</a></li>
-			<li><a href="javascript:void(0)" onclick="scrollToSection('s6')">Conclusion</a></li>
+            <li (click)="scrollToSection('s1')">What Is the Dark Web?</a></li>
+            <li (click)="scrollToSection('s2')">Why Data Leaks Are a Big Problem</a></li>
+            <li (click)="scrollToSection('s3')">How Do Data Leaks Happen?</a></li>
+            <li (click)="scrollToSection('s4')">How to Stay Safe on the Dark Web</a></li>
+            <li (click)="scrollToSection('s5')">How to Check if Your Personal Information is on the Dark Web with Google One</a></li>
+			<li (click)="scrollToSection('s6')">Conclusion</a></li>
         </ul>
     </div>
     <br>
@@ -155,14 +155,6 @@
                 are your best friends when you're on the dark web.</span></p>
 				</section>
 				
-  <script>
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    </script>
 </body>
 
 </html>
